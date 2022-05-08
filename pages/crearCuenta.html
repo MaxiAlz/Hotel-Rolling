@@ -20,7 +20,7 @@
                   <h5 class="card-title text-center">Crea nueva cuenta</h5>
                   <p class="card-text text-center">Crea tu cuenta para interactuar con nosotros,haz tu reserva,revisa nuestros servicios y mucho mas</p>
                   <!-- formulario para crear usuario -->
-                  <form class="col-8 ms-auto me-auto">
+                  <form class="col-8 ms-auto me-auto" id="formularioCrearCuenta">
                       <div class="mb-1">
                       <label for="emailCrearCuenta" class="form-label"></label>
                       <input type="email" class="form-control" id="emailCrearCuenta" aria-describedby="emailHelp" placeholder="Email">
@@ -30,6 +30,7 @@
                     <div class="mb-1">
                         <label for="nombreUsuarioCrearCuenta" class="form-label"></label>
                         <input type="email" class="form-control" id="nombreUsuarioCrearCuenta" aria-describedby="emailHelp" placeholder="Nombre de Usuario">
+                        <div id="nombreUsuarioLargo" class="form-text text-danger d-none">*Nombre Usuario demasiado largo*</div>
                       </div>
                       <!-- contraseña -->
                     <div class="mb-1">
@@ -42,7 +43,7 @@
                       <div id="contraseñaNoCoinciden" class="form-text text-danger d-none">*Las contraseñas no son iguales*</div>
                       </div>
                     
-                    <button type="submit" class="btn btn-primary mt-2" onclick="validarEmail()" id="botonCrearCuenta">Crear cuenta</button>
+                    <button type="submit" class="btn btn-primary mt-2" onclick="crearUsuarionuevo()" id="botonCrearCuenta">Crear cuenta</button>
                   </form>
                 </div>
               </div>
