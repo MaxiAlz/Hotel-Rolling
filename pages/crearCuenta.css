@@ -13,6 +13,7 @@
     margin-top: 3rem;
 }
 
+
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) { 
     .CarrouselStyle{
