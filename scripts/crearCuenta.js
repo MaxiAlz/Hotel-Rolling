@@ -14,21 +14,29 @@ funciones a crear:
 validar que el mail este bien ingresado
 validar nombre de usuario(no mas de 15 caracteres)
 crear usuario nuevo a partir de clase
-
+ limpiar campos formulario
 */
+// const ejecutarValidaciones=()=>{
+//   contraseñaInvalida()
+//   emailIncorrecto()
+//   usuarioIncorrecto()
+// }
 // validar contraseñas
-  let ContraseñaInvalida=()=>{
+  let contraseñaInvalida=()=>{
     let contraseña=document.getElementById(`contraseñaCrearCuenta`).value
     let confirmarContraseña=document.getElementById(`confirmarContraseña`).value
     console.log(contraseña,confirmarContraseña)
     if(contraseña!=confirmarContraseña){
       document.getElementById(`contraseñaNoCoinciden`).className=`form-text text-danger`
       return true
-    }else return false
+    }else {
+      document.getElementById(`contraseñaNoCoinciden`).className=`d-none`
+      return false
+    }
   }
 
   //validar email
-  const validarEmail=()=>{
+  const emailIncorrecto=()=>{
     let email=document.getElementById(`emailCrearCuenta`).value
     console.log(email);
     const expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
@@ -37,7 +45,34 @@ crear usuario nuevo a partir de clase
     if(expReg.test(email)==false){
       document.getElementById(`emailIncorrecto`).className=`form-text text-danger`
       return true
-    }else return false
+    }else {
+      document.getElementById(`emailIncorrecto`).className=`d-none`
+      return false
+    }
+  }
+
+  //validar nombre de usuario
+  const usuarioIncorrecto=()=>{
+    const nombreUsuario=document.getElementById(`nombreUsuarioCrearCuenta`).value
+    if(nombreUsuario.length>15){
+      document.getElementById(`nombreUsuarioLargo`).className=`form-text text-danger`
+      return true
+    }else{
+      document.getElementById(`nombreUsuarioLargo`).className=`d-none`
+      return false
+    }
+  }
+
+  const crearUsuarionuevo=()=>{
+    if( contraseñaInvalida()||emailIncorrecto()||usuarioIncorrecto()){
+      return
+    }else{
+      let contraseña=document.getElementById(`contraseñaCrearCuenta`).value
+      let email=document.getElementById(`emailCrearCuenta`).value
+      let nombreUsuario=document.getElementById(`nombreUsuarioCrearCuenta`).value
+      let nuevoUsuario = new UsuarioNuevo(email,nombreUsuario,contraseña)
+      return nuevoUsuario
+    }
   }
 
 
