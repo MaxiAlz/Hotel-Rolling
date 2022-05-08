@@ -19,56 +19,33 @@
                 <div class="card-body">
                   <h5 class="card-title text-center">Crea nueva cuenta</h5>
                   <p class="card-text text-center">Crea tu cuenta para interactuar con nosotros,haz tu reserva,revisa nuestros servicios y mucho mas</p>
+                  <!-- formulario para crear usuario -->
                   <form class="col-8 ms-auto me-auto">
                       <div class="mb-1">
-                      <label for="emailUsuario" class="form-label"></label>
-                      <input type="email" class="form-control" id="emailUsuario" aria-describedby="emailHelp" placeholder="Email">
-                      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                      <label for="emailCrearCuenta" class="form-label"></label>
+                      <input type="email" class="form-control" id="emailCrearCuenta" aria-describedby="emailHelp" placeholder="Email">
+                      <div id="emailIncorrecto" class="form-text text-danger d-none">*Email incorrecto*</div>
                     </div>
+                    <!-- nombre de usuario -->
                     <div class="mb-1">
-                        <label for="exampleInputEmail1" class="form-label"></label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre de Usuario">
+                        <label for="nombreUsuarioCrearCuenta" class="form-label"></label>
+                        <input type="email" class="form-control" id="nombreUsuarioCrearCuenta" aria-describedby="emailHelp" placeholder="Nombre de Usuario">
                       </div>
+                      <!-- contraseña -->
                     <div class="mb-1">
-                      <label for="exampleInputPassword1" class="form-label"></label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      <label for="contraseñaCrearCuenta" class="form-label"></label>
+                      <input type="password" class="form-control" id="contraseñaCrearCuenta" placeholder="Password">
                     </div>
                     <div class="mb-1">
-                        <label for="exampleInputPassword1" class="form-label"></label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+                      <label for="confirmarContraseña" class="form-label"></label>
+                      <input type="password" class="form-control" id="confirmarContraseña" placeholder="Confirm Password">
+                      <div id="contraseñaNoCoinciden" class="form-text text-danger d-none">*Las contraseñas no son iguales*</div>
                       </div>
                     
-                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                    <button type="submit" class="btn btn-primary mt-2" onclick="validarEmail()" id="botonCrearCuenta">Crear cuenta</button>
                   </form>
                 </div>
               </div>
-            <!-- <div class="card card-Login mb-3 col-xl-6 col-sm-8">
-                <img src="img/logo completo.png" class="card-img-top" alt="logo">
-                <div class="card-body row">
-                    <div class="col">
-                        <form>
-                            <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Email address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleInputPassword1" class="form-label">Password</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                          </form>
-                    </div>
-                    
-                    <div class="col text-center mt-5">
-                        <p class="bw-bold">¿Todavia no tienes una cuenta?</p>
-                        <button type="button" class="btn btn-link">Crear Cuenta</button>
-                    </div>
-
-                    
-                </div>
-              </div> -->
         </section>
     </main>
     <footer>
@@ -76,7 +53,7 @@
     </footer>
     
 
-    <script src="app.js" defer></script>
+    <script src="../scripts/crearCuenta.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
