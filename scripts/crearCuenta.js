@@ -63,19 +63,45 @@ crear usuario nuevo a partir de clase
     }
   }
 
-  const crearUsuarionuevo=()=>{
-    if( contraseñaInvalida()||emailIncorrecto()||usuarioIncorrecto()){
-      return
-    }else{
-      let contraseña=document.getElementById(`contraseñaCrearCuenta`).value
-      let email=document.getElementById(`emailCrearCuenta`).value
-      let nombreUsuario=document.getElementById(`nombreUsuarioCrearCuenta`).value
-      let nuevoUsuario = new UsuarioNuevo(email,nombreUsuario,contraseña)
-      console.log(nuevoUsuario)
-      return nuevoUsuario
-    }
+  
+  // para acceder a la base de datos de usuarios uso:
+  //http://localhost:3000/usuarios
+  
+  //metodo GET
+  let obtenerDatos=()=>{
+    fetch(`http://localhost:3000/usuarios`)
+    .then(response=>response.json())
+    .then(response=>console-console.log(response))
   }
-
-
-
  
+  //metodo Post
+  
+  const postUsuario=()=>{
+    fetch(`http://localhost:3000/usuarios`,{
+      method:`POST`,
+    // body:JSON.stringify(UsuarioNuevo())
+    body: JSON.stringify({
+      email: `${document.getElementById(`emailCrearCuenta`).value}`,
+      nombreUsuario: `${document.getElementById(`nombreUsuarioCrearCuenta`).value}`,
+      contraseña: `${document.getElementById(`contraseñaCrearCuenta`).value}`
+    }),
+    headers: {
+      "Content-Type": "application/json; charset=UTF-8",
+    }
+  })
+  .then(response=>response.json())
+  .then(response=>console.log(response))
+}
+
+const crearUsuarionuevo=()=>{
+  if( contraseñaInvalida()||emailIncorrecto()||usuarioIncorrecto()){
+    return
+  }else{
+    let contraseña=document.getElementById(`contraseñaCrearCuenta`).value
+    let email=document.getElementById(`emailCrearCuenta`).value
+    let nombreUsuario=document.getElementById(`nombreUsuarioCrearCuenta`).value
+    let nuevoUsuario = new UsuarioNuevo(email,nombreUsuario,contraseña)
+    console.log(nuevoUsuario)
+    return nuevoUsuario
+  }
+}
