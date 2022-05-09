@@ -71,6 +71,7 @@ crear usuario nuevo a partir de clase
       let email=document.getElementById(`emailCrearCuenta`).value
       let nombreUsuario=document.getElementById(`nombreUsuarioCrearCuenta`).value
       let nuevoUsuario = new UsuarioNuevo(email,nombreUsuario,contraseña)
+      console.log(nuevoUsuario)
       return nuevoUsuario
     }
   }
