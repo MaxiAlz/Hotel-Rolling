@@ -79,3 +79,9 @@
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1400px) {
  }
+
+/* ------------Formulario--------------- */
+.form-group .errorTexto{
+    color: red;
+    display:none ;
+}
