@@ -20,6 +20,9 @@ crear usuario nuevo a partir de clase
 //   contraseñaInvalida()
 //   emailIncorrecto()
 //   usuarioIncorrecto()
+// metodo para subir usuarios a base de datos
+// validar en base de datos si existe el usuario
+//crear pagina para usuario logueado
 // }
 // validar contraseñas
   let contraseñaInvalida=()=>{
