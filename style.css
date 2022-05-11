@@ -101,13 +101,14 @@ main {
     text-align: center;
     width: 100%;
 }
-.titulo-bienvenida h1{
+.titulo-bienvenida h1, .contactanos h2{
     font-size: xx-large;
     font-family: "frontage w00 regular";
     color: rgb(112, 68, 68);
     letter-spacing: 20px;
     margin: 20px 5px
 }
+
 
 .selectores{
     justify-content:center;
@@ -303,9 +304,10 @@ box-shadow: 0 5px 10px rgb(105, 107, 112);
 }
 
 @media (max-width:800px){
-    .titulo-bienvenida h1{
+    .titulo-bienvenida h1, .contactanos h2{
         font-size: medium;
         letter-spacing: 10px;
+        text-align: center;
         
     }
     .selectores{
@@ -377,6 +379,9 @@ box-shadow: 0 5px 10px rgb(105, 107, 112);
         margin: 5px 0;
         padding: 0;
         width: 100%;
+    }
+    .formulario,.form-group{
+        margin: 20px 0;
     }
 }
 @media (min-width:800px) {

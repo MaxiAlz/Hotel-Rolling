@@ -193,9 +193,7 @@
       </div>
       <div class="card">
         <div class="face front">
-          <img
-            src="./img/chicaEnLaPlaya.png"
-            alt="chicaenlaplaya">
+          <img src="./img/chicaEnLaPlaya.png" alt="chicaenlaplaya">
           <h2>Ofertas</h2>
         </div>
         <div class="face back">
@@ -286,128 +284,125 @@
 
     <!--MAPA Y FORMULARIO-->
     <div class="container-fluid">
-      <div><h1>Comunicate con nosotros</h1></div>
-      <br />
-      <div class="row">
-          <div class="col-md-6">
-            <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d229842.0901101292!2d-80.1609336!3d25.8272297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b3156fe24ec1%3A0x5fa710ae85a4ac4c!2sGrand%20Beach%20Hotel!5e0!3m2!1sen!2scl!4v1651612747625!5m2!1sen!2scl"
-            width="400"
-            height="300"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          </div>
-          <br />
-          <!--Formulario-->
-          <div class="col-md-6">
-              <form class="formulario" id="formulario">
-                  <div class="form-group">
-                      <label for="nombre">Nombre</label>
-                      <input type="" class="form-control" id="nombre" placeholder="Nombre" required >
-                      <small class="errorTexto">Introduce Nombre</small>
-                  </div>
-                  <div class="form-group">
-                      <label for="form-email">Correo Electronico</label>
-                      <input type="text" class="form-control" id="email" placeholder="Correo Electronico" required>
-                      <small class="errorTexto">Introduce Correo</small>
-                  </div>
-                  
-                  <div class="form-group">
-                      <label for="form-message">Envia tu mensaje</label>
-                      <textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje " required></textarea>
-                      <small class="errorTexto" id="errorTexto">Introduce texto</small>
-                  </div>
-                  <button type="submit" class="btn btn-primary my-2" onclick="capturaDatos()" >Enviar</button>  
-                            
-              </form>
-          </div>
+      <div class="contactanos">
+        <h2>Comunicate con nosotros</h2>
       </div>
-  </div>  
+      <br />
+      <div class="row d-flex">
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d229842.0901101292!2d-80.1609336!3d25.8272297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b3156fe24ec1%3A0x5fa710ae85a4ac4c!2sGrand%20Beach%20Hotel!5e0!3m2!1sen!2scl!4v1651612747625!5m2!1sen!2scl"
+            width="100%" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <br />
+        <!--Formulario-->
+        <div class="col-md-6">
+          <form class="formulario" id="formulario">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="" class="form-control" id="nombre" placeholder="Nombre" required>
+              <small class="errorTexto">Introduce Nombre</small>
+            </div>
+            <div class="form-group">
+              <label for="form-email">Correo Electronico</label>
+              <input type="text" class="form-control" id="email" placeholder="Correo Electronico" required>
+              <small class="errorTexto">Introduce Correo</small>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message">Envia tu mensaje</label>
+              <textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje " required></textarea>
+              <small class="errorTexto" id="errorTexto">Introduce texto</small>
+            </div>
+            <button type="submit" class="btn btn-primary my-2" onclick="capturaDatos()">Enviar</button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
   </main>
   <div class="container-fluid my-5">
     <!-- Footer -->
-    <footer
-            class="text-center text-lg-start text-white"
-            style="background-color: #588BA2"
-            >
-    
+    <footer class="text-center text-lg-start text-white" style="background-color: #588BA2">
+
       <div class="container p-4 pb-0">
-       
+
         <section class="">
-          
+
           <div class="row">
-            
+
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
               <h6 class="text-uppercase mb-4 font-weight-bold">
-                Grand Rolling Beach Hotel 
+                Grand Rolling Beach Hotel
               </h6>
               <p>
                 Grand Beach Hospitality Group
                 4835 Collins Ave
                 Miami Beach, FL 33140
                 Phone: +1 305-538-8666
-              
+
               </p>
             </div>
-           
-  
+
+
             <hr class="w-100 clearfix d-md-none" />
-  
-           
+
+
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              
-              <a class="text-uppercase mb-4 text-decoration-none text-white font-weight-bold" href="#nombre">Contacto</a>
-              
+
+              <a class="text-uppercase mb-4 text-decoration-none text-white font-weight-bold"
+                href="#nombre">Contacto</a>
+
             </div>
-            
-  
+
+
             <hr class="w-100 clearfix d-md-none" />
-  
-           
+
+
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              <a class="text-uppercase mb-4 text-decoration-none text-white font-weight-bold" href= "#">Acerca</a>
-              
+              <a class="text-uppercase mb-4 text-decoration-none text-white font-weight-bold" href="#">Acerca</a>
+
             </div>
-  
-            
+
+
             <hr class="w-100 clearfix d-md-none" />
-  
-            
+
+
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <a class="text-uppercase mb-4 text-decoration-none text-white font-weight-bold" href= "#navBar">Hoteles</a>
-              
+              <a class="text-uppercase mb-4 text-decoration-none text-white font-weight-bold" href="#navBar">Hoteles</a>
+
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              
-              
+
+
             </div>
-            
-            
-            
+
+
+
           </div>
-          
+
         </section>
-        
-  
+
+
         <hr class="my-3">
-  
-        
+
+
         <section class="p-3 pt-0">
           <div class="row d-flex align-items-center">
             <p>Copyright 2022 </p>
-            
+
         </section>
-        
+
       </div>
-     
+
     </footer>
     <!-- Footer -->
   </div>
 
-  
+
 
 
 
