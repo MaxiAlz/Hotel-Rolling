@@ -6,6 +6,12 @@
       "nombreUsuario": "usuarioGenerico",
       "contraseña": "usuario123"
     },
+    {
+      "email": "asd@hotmail.com",
+      "nombreUsuario": "Maxialz",
+      "contraseña": "asdasd",
+      "id": 2
+    }
   ],
   "comments": [
     {
