@@ -1,4 +1,10 @@
 
+/*
+funciones a crear:
+ver si el usuario ingresado existe en la base de datos tal vez un get y recorriendo el arreglo para ver si el usuario existe
+cheaquear si la contraseña es correcta
+
+*/
 class Usuario{
     constructor(email,contraseña){
         this.email=email
@@ -13,3 +19,24 @@ let obtenerDatosLogin=()=>{
     console.log(ingresaUsusario)
     
 }
+//obetener datos de la base
+let leerUsuariosBaseDeDatos=()=>{
+    fetch(`http://localhost:3000/usuarios`)
+    .then(response=>response.json())
+    .then(response=>{
+        /*logica para ver si el usuario existe en la base de datos
+        esto me trae todos los usuarios
+        despues hacer la logica para ver si el email con el find
+         */
+    })
+  }
+
+  //ver si el usuario existe en la base de datos
+  const recorrerusuarios=()=>{
+      const baseDeDatosUsuarios= leerUsuariosBaseDeDatos()
+      baseDeDatosUsuarios.usuarios
+      //como hago para recorrer un objeto de objetos
+
+  }
+
+  //hacer un get y adentro del then hacer la comprobacion del usuario
