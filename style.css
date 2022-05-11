@@ -85,3 +85,18 @@
     color: red;
     display:none ;
 }
+
+.titulo-bienvenida{
+    margin: auto;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 100%;
+}
+.titulo-bienvenida h1{
+    font-size: xx-large;
+    font-family: "frontage w00 regular";
+    color: rgb(112, 68, 68);
+    letter-spacing: 20px;
+    margin: 20px 5px
+}
