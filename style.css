@@ -101,13 +101,14 @@ main {
     text-align: center;
     width: 100%;
 }
-.titulo-bienvenida h1{
+.titulo-bienvenida h1, .contactanos h2{
     font-size: xx-large;
     font-family: "frontage w00 regular";
     color: rgb(112, 68, 68);
     letter-spacing: 20px;
     margin: 20px 5px
 }
+
 
 .selectores{
     justify-content:center;
@@ -249,11 +250,64 @@ box-shadow: 0 5px 10px rgb(105, 107, 112);
 .cardContainer .card:hover .back{
     transform: perspective(600px) rotateY(360deg);
 }
+.categorias-container{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px 5px;
+
+}
+.categoria-style img{
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+    
+}
+.categoria-style img:hover{
+    transform: scale(1.2);
+    
+}
+.categoria{
+    justify-content: center;
+    
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+}
+.categoria-style{
+    width: 80%;
+    overflow: hidden;
+    margin: 0;
+}
+.categoria-textos{
+    background-color: #d8d8d488
+    ;
+    width: 40%;
+    margin: 0;
+}
+.categoria-textos h3,.categoria-textos p{
+    text-align: center;
+    font-size: larger;
+    margin-top: 40px;
+} 
+.categoria-textos h3{
+  font-size: xx-large;
+  letter-spacing: 10px;
+  color: #508e90c5;
+}
+
+.cateGorias{
+    width: 100%;
+    
+    margin: 5px 0;
+
+}
 
 @media (max-width:800px){
-    .titulo-bienvenida h1{
+    .titulo-bienvenida h1, .contactanos h2{
         font-size: medium;
         letter-spacing: 10px;
+        text-align: center;
         
     }
     .selectores{
@@ -292,4 +346,47 @@ box-shadow: 0 5px 10px rgb(105, 107, 112);
         margin: 0;
         padding: 0;
     }
+    .categoria{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        
+    }
+    .categoria-textos{
+        background-color: #d8d8d488
+        ;
+        width: 100%;
+        height: 100%;font-size: small;
+        margin: 0%;
+    }
+    .categoria-textos h3{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .categoria-style{
+        width: 100%;
+        height: 60%;
+        transition: 2s;
+        margin: 0;
+        
+    }
+    .cateGorias{
+        padding: 0;
+    }
+    .categorias-container{
+        margin: 5px 0;
+        padding: 0;
+        width: 100%;
+    }
+    .formulario,.form-group{
+        margin: 20px 0;
+    }
+}
+@media (min-width:800px) {
+    .habdos{
+        flex-direction: row-reverse;
+    }
+    
 }
