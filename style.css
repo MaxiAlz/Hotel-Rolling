@@ -89,23 +89,30 @@ body{
     margin: 0;
 }
 main {
-    margin: 0;
-    padding: 0;
+  
     display: flex;
     flex-wrap: wrap;
 }
 .titulo-bienvenida{
-    margin: auto;
+    margin: 20px 0;
     font-size: medium;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     width: 100%;
 }
-.titulo-bienvenida h1, .contactanos h2{
+.titulo-bienvenida h1{
     font-size: xx-large;
     font-family: "frontage w00 regular";
     color: rgb(112, 68, 68);
     letter-spacing: 20px;
+    margin: 20px 5px
+}
+.contactanos h2{
+    font-size:35px;
+    
+    letter-spacing: 10px;
+    font-family: "frontage w00 regular";
+    color: rgb(112, 68, 68);
     margin: 20px 5px
 }
 
@@ -117,7 +124,7 @@ main {
     margin: auto;
     font-size: medium;
     font-family: 'Times New Roman', Times, serif;
-   margin: 20px 5px;
+   margin-bottom: 40px;
     width: 100%;
   
 }
@@ -305,7 +312,7 @@ box-shadow: 0 5px 10px rgb(105, 107, 112);
 
 @media (max-width:800px){
     .titulo-bienvenida h1, .contactanos h2{
-        font-size: medium;
+        font-size: 25px;
         letter-spacing: 10px;
         text-align: center;
         
@@ -342,10 +349,7 @@ box-shadow: 0 5px 10px rgb(105, 107, 112);
         flex-wrap: wrap;
     
     }
-    .container-fluid{
-        margin: 0;
-        padding: 0;
-    }
+    
     .categoria{
         width: 100%;
         display: flex;
@@ -382,6 +386,10 @@ box-shadow: 0 5px 10px rgb(105, 107, 112);
     }
     .formulario,.form-group{
         margin: 20px 0;
+    }
+    .container .footer-text{
+       
+       
     }
 }
 @media (min-width:800px) {
