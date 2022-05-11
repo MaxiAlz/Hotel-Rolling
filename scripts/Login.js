@@ -23,7 +23,12 @@ let obtenerDatosLogin=()=>{
 let leerUsuariosBaseDeDatos=()=>{
     fetch(`http://localhost:3000/usuarios`)
     .then(response=>response.json())
-    .then(response=>console-console.log(response))
+    .then(response=>{
+        /*logica para ver si el usuario existe en la base de datos
+        esto me trae todos los usuarios
+        despues hacer la logica para ver si el email con el find
+         */
+    })
   }
 
   //ver si el usuario existe en la base de datos
@@ -31,5 +36,7 @@ let leerUsuariosBaseDeDatos=()=>{
       const baseDeDatosUsuarios= leerUsuariosBaseDeDatos()
       baseDeDatosUsuarios.usuarios
       //como hago para recorrer un objeto de objetos
-|
+
   }
+
+  //hacer un get y adentro del then hacer la comprobacion del usuario

@@ -96,7 +96,7 @@ crear usuario nuevo a partir de clase
   .then(response=>console.log(response))
 }
 
-const crearUsuarionuevo=()=>{
+const crearUsuarioNuevo=()=>{
   if( contraseñaInvalida()||emailIncorrecto()||usuarioIncorrecto()){
     return
   }else{
@@ -105,6 +105,7 @@ const crearUsuarionuevo=()=>{
     let nombreUsuario=document.getElementById(`nombreUsuarioCrearCuenta`).value
     let nuevoUsuario = new UsuarioNuevo(email,nombreUsuario,contraseña)
     console.log(nuevoUsuario)
+    postUsuario()
     return nuevoUsuario
   }
 }
