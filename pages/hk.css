@@ -1,0 +1,95 @@
+body{
+    background-color: rgb(215, 215, 215);
+}
+
+.navbarStyle{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.454);
+    top: 0.1rem;
+    transition:all 0.5s;
+}
+
+.cardTable{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    border-color: black;
+    border-radius: 1rem;
+}
+
+.navbarStyle.active{
+    background-color: white;
+    padding: 5px;
+}
+.divcontenido{
+    height: 100000px;
+    background-color: aqua;
+}
+.boxtexto{
+    width: 400px;
+    height: auto;
+}
+
+.carousel-inner{
+    position: relative;
+}
+
+.sobreBanner{
+    position: absolute;
+    bottom: 5px;
+}
+
+.scroll{
+    height: 1000px;
+}
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) { 
+    .CarrouselStyle{
+        height: 200px;
+    }
+    .logoHorizontalWidth{
+        width: 294px;
+    }
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) { 
+    .TextoSobreImagen{
+        display: none;
+    }
+    .botonSobreImagen{
+        position: absolute; 
+        bottom: 25px;
+    }
+    
+    
+}
+@media (min-width: 992px){
+    .logoHorizontal{
+        display: none;
+    }
+}
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 992px) { 
+    .logoCompleto{
+        display: none;
+        
+    }
+    .sobreBanner{
+        position: absolute;
+        bottom: 30px;
+    }
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) {
+    
+}
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1400px) {
+ }
