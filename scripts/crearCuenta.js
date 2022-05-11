@@ -78,7 +78,6 @@ crear usuario nuevo a partir de clase
   }
  
   //metodo Post
-  
   const postUsuario=()=>{
     fetch(`http://localhost:3000/usuarios`,{
       method:`POST`,
@@ -93,9 +92,12 @@ crear usuario nuevo a partir de clase
     }
   })
   .then(response=>response.json())
-  .then(response=>console.log(response))
+  .then(response=>{
+    console.log(response)
+    window.location.href = "/index.html"
+  })
 }
-
+/*validar si el usuario existe en la base de datos */
 const crearUsuarioNuevo=()=>{
   if( contraseñaInvalida()||emailIncorrecto()||usuarioIncorrecto()){
     return
@@ -104,8 +106,9 @@ const crearUsuarioNuevo=()=>{
     let email=document.getElementById(`emailCrearCuenta`).value
     let nombreUsuario=document.getElementById(`nombreUsuarioCrearCuenta`).value
     let nuevoUsuario = new UsuarioNuevo(email,nombreUsuario,contraseña)
-    console.log(nuevoUsuario)
     postUsuario()
+    console.log(nuevoUsuario)
+    // window.location.href=`http://127.0.0.7:5500/pages/LogIn.html` //se va antes de la pagina antes que llegue el formulario a db
     return nuevoUsuario
   }
 }

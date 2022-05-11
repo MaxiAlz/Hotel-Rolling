@@ -10,18 +10,18 @@ document.addEventListener(`DOMContentLoaded`,()=>{
     leerApiUsuarios()
 })
 
-const leerApiUsuarios=async()=>{
-    try{
-        const respuesta=await fetch(`users.json`)
-        const datosDeLaApi=await respuesta.json()
-        console.log(datosDeLaApi)
-    }catch(error){
-        console.log(error);
-    }
-}
+// const leerApiUsuarios=async()=>{
+//     try{
+//         const respuesta=await fetch(`users.json`)
+//         const datosDeLaApi=await respuesta.json()
+//         console.log(datosDeLaApi)
+//     }catch(error){
+//         console.log(error);
+//     }
+// }
 
-const recorrerDAtos=(arrayDatos)=>{
-    arrayDatos.forEach(objeto => {
-        console.log(objeto.tittle);
-    });
-}
+// const recorrerDAtos=(arrayDatos)=>{
+//     arrayDatos.forEach(objeto => {
+//         console.log(objeto.tittle);
+//     });
+// }
