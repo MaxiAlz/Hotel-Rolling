@@ -1,0 +1,23 @@
+{
+  "name": "hotel-rolling-git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxiAlz/Hotel-Rolling.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxiAlz/Hotel-Rolling/issues"
+  },
+  "homepage": "https://github.com/MaxiAlz/Hotel-Rolling#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
