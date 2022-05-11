@@ -100,3 +100,92 @@
     letter-spacing: 20px;
     margin: 20px 5px
 }
+
+.selectores{
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+   margin: 20px 5px;
+    width: 100%;
+  
+}
+.selectores .checkinOut{
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selectores .cuantasPersonas{
+    
+    justify-content: space-around;
+}
+.cuantasPersonas .form-select{
+    margin-left: 5px;
+}
+
+#start{
+    border: none;
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+}
+.dateSelect{
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding-left: 10px;
+    margin: 10px 15px;
+}
+
+.personasBoton .persBoton .form-select{
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.stiloBoton{
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    width: 320px;
+    background-color: #74c2b999;
+    color: #fff;
+    margin-left: 5px;
+    letter-spacing: 5px;
+    
+}
+.stiloBoton:hover{
+    background-color: #a9d3ce99;
+    color: grey;
+}
+
+@media (max-width:800px){
+    .titulo-bienvenida h1{
+        font-size: medium;
+        letter-spacing: 10px;
+        
+    }
+    .selectores{
+        padding: 5px;
+        justify-content: center;
+    }
+    .cuantasPersonas{
+        margin: 5px;
+        justify-content: center;
+        width: 90%;
+    }
+    .checkinOut{
+        justify-content: center;
+        width: 80%;
+    }
+    .dateSelect{
+        width: 50%;
+        margin: 10px;
+        
+    }
+    .checkinOut #start{
+        
+        justify-content: center;
+        padding-right: 10px;
+        margin: 5px;
+    }
+}
