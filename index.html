@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="./scripts/app.js" defer></script>
   <script src="./scripts/formulario.js" defer></script>
+  <script src="./scripts/autenticacion.js" defer></script>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -89,8 +90,24 @@
                     </li>
                     <li class="nav-item fw-bolder d-flex justify-content-end">
                       <a class="" href="pages/LogIn.html">
-                        <button type="button" class="btn btn-outline-dark">| Login</button>
+                        <button type="button" class="btn btn-outline-dark" id="BotonLogin">| Login</button>
                       </a>
+                    </li>
+                    <!-- boton admin -->
+                    <li class="nav-item dropdown d-flex justify-content-start d-none" id="botonAdmin">
+                      <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Admin
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="pages/administracion.html">Administrar<samp class="fs-5 text-uppercase">
+                              Pinamar</samp></a></li>
+                        <li><a class="dropdown-item" href="#">Cerrar sesion<samp class="fs-5 text-uppercase">
+                              Miami</samp></a></li>
+                        <li><a class="dropdown-item" href="#">Eliminar Cuenta<samp class="fs-5 text-uppercase">
+                              Caribe</samp></a></li>
+
+                      </ul>
                     </li>
 
                   </ul>
