@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(232, 232, 232);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;    
+}
+footer{
+    margin-top: auto;
+}
+
+.navbarStyle{
+    /* position: fixed; */
+    background-color: rgba(255, 255, 255, 0.454);
+    top: 0.1rem;
+    transition:all 0.5s;
+}
+
+.cardTable{
+    margin-top: 2rem;
+    width: 90%;
+    background-color: rgb(247, 247, 247);
+    border-color: black;
+    padding-bottom: 0.5rem;
+    border-radius: 10px;
+}
+
+.navbarStyle.active{
+    background-color: white;
+    padding: 5px;
+}
+
+
+/* 
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) { 
+    .logoHorizontalWidth{
+        width: 294px;
+    }
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) { 
+    .TextoSobreImagen{
+        display: none;
+    }
+    .botonSobreImagen{
+        position: absolute; 
+        bottom: 25px;
+    }
+    
+    
+}
+@media (min-width: 992px){
+    .logoHorizontal{
+        display: none;
+    }
+}
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 992px) { 
+    .logoCompleto{
+        display: none;
+        
+    }
+    .sobreBanner{
+        position: absolute;
+        bottom: 30px;
+    }
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) {
+    
+}
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1400px) {
+ }
