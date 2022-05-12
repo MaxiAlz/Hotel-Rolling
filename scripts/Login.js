@@ -32,10 +32,6 @@ let leerUsuariosBaseDeDatos=()=>{
     .then(response=>response.json())
     .then(response=>{
         usuarioLogueado(response)
-        /*logica para ver si el usuario existe en la base de datos
-        esto me trae todos los usuarios
-        despues hacer la logica para ver si el email con el find
-         */
     })
 }  
 const usuarioLogueado=(response)=>{
@@ -55,14 +51,6 @@ const usuarioLogueado=(response)=>{
 const usuarioEncontrado=(response)=>{
     const usuario = response.find(usuario => usuario.email === emailInput.value)
     return usuario
-    }
-
-const cerrarSesion = () => {
-    const confirmacion = confirm("esta seguro?")
-    if (confirmacion) {
-        localStorage.removeItem("logueado")
-        window.location.href = "/index.html"
-    } 
 }
- 
+
   

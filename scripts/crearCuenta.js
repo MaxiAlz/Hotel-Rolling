@@ -81,7 +81,6 @@ crear usuario nuevo a partir de clase
   const postUsuario=()=>{
     fetch(`http://localhost:3000/usuarios`,{
       method:`POST`,
-    // body:JSON.stringify(UsuarioNuevo())
     body: JSON.stringify({
       email: `${document.getElementById(`emailCrearCuenta`).value}`,
       nombreUsuario: `${document.getElementById(`nombreUsuarioCrearCuenta`).value}`,
@@ -108,7 +107,6 @@ const crearUsuarioNuevo=()=>{
     let nuevoUsuario = new UsuarioNuevo(email,nombreUsuario,contraseña)
     postUsuario()
     console.log(nuevoUsuario)
-    // window.location.href=`http://127.0.0.7:5500/pages/LogIn.html` //se va antes de la pagina antes que llegue el formulario a db
     return nuevoUsuario
   }
 }

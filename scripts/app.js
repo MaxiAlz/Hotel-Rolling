@@ -5,23 +5,8 @@ window.addEventListener(`scroll`, ()=>{
     nav.classList.toggle(`active`,window.scrollY>0)
 })
 
-//ler api
-document.addEventListener(`DOMContentLoaded`,()=>{
-    leerApiUsuarios()
-})
-
-// const leerApiUsuarios=async()=>{
-//     try{
-//         const respuesta=await fetch(`users.json`)
-//         const datosDeLaApi=await respuesta.json()
-//         console.log(datosDeLaApi)
-//     }catch(error){
-//         console.log(error);
-//     }
-// }
-
-// const recorrerDAtos=(arrayDatos)=>{
-//     arrayDatos.forEach(objeto => {
-//         console.log(objeto.tittle);
-//     });
+// const usuarioLogueado = localStorage.getItem("logueado")
+// if (usuarioLogueado) {
+//     document.getElementById(`BotonLogin`).className="d-none"
+//     document.getElementById(`botonAdmin`).className="nav-item dropdown d-flex justify-content-start"
 // }
