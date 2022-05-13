@@ -8,7 +8,7 @@
     },
     {
       "email": "asd@hotmail.com",
-      "nombreUsuario": "asd@hotmail.com",
+      "nombreUsuario": "asNombre",
       "contraseña": "asdasd",
       "id": 2
     }
@@ -20,7 +20,24 @@
       "postId": 1
     }
   ],
-  "profile": {
-    "name": "typicode"
+  "habitaciones":[
+  {
+    "titulo": "Habitacion Paramount",
+    "imagen": "https://ibb.co/dBJNNNb",
+    "descripcion": "Disfruta en el regazo de la naturaleza.",
+    "id": 1
+  },
+  {
+    "titulo": "Habitacion Hillside",
+    "imagen": "https://ibb.co/pf1ZMSz",
+    "descripcion": "Abre la puerta a un mundo nuevo. Las personas durante el viaje buscan un espacio cómodo y afectuoso para vivir.",
+    "id": 2
+  },
+  {
+    "titulo": "Habitacion Crossroads",
+    "imagen": "https://ibb.co/882Hc85",
+    "descripcion": "El lujo de despertar frente al mar.Departamento dos ambientes y baño privado",
+    "id": 3
   }
+  ]
 }

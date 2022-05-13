@@ -18,6 +18,13 @@ class Usuario{
         this.contraseña=contraseña
     }
 }
+class UserEncontrado{
+    constructor(email,nombreUsuario,id){
+        this.email=email
+        this.nombreUsuario=nombreUsuario
+        this.id=id
+    }
+}
 
 let obtenerDatosLogin=()=>{
     let emailLogin=document.getElementById(`EmailLogin`).value
@@ -41,7 +48,8 @@ const usuarioLogueado=(response)=>{
             alert("Usuario o contraseña incorrectos")
         } else {
             if (match.contraseña === contraseñaInput.value) {
-                localStorage.setItem("logueado", JSON.stringify(match))
+                const guardarUsusario=new UserEncontrado(match.email,match.nombreUsuario,match.id)
+                localStorage.setItem("logueado", JSON.stringify(guardarUsusario))
                 window.location.href = "/index.html"
              } else {
                 alert("Usuario o contraseña incorrectos")

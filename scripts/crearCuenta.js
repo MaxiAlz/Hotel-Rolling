@@ -93,7 +93,7 @@ crear usuario nuevo a partir de clase
   .then(response=>response.json())
   .then(response=>{
     console.log(response)
-    window.location.href = "/index.html"
+    window.location.href = "./Login.html"
   })
 }
 /*validar si el usuario existe en la base de datos */
