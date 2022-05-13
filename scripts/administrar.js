@@ -38,3 +38,4 @@ const agregarContenidoCards=(habitaciones)=>{
     cargarContenidoHabitaciones.appendChild(fragment)
 }
 
+// comen
