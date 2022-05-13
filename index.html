@@ -302,21 +302,23 @@
           <form class="formulario" id="formulario">
             <div class="form-group">
               <label for="nombre">Nombre</label>
-              <input type="" class="form-control" id="nombre" placeholder="Nombre" required>
-              <small class="errorTexto">Introduce Nombre</small>
+              <input type="" class="form-control" id="nombre" placeholder="Nombre" >
+              <small  id= "errorTexto"class="errorTexto">Introduce Nombre</small>
             </div>
             <div class="form-group">
               <label for="form-email">Correo Electronico</label>
-              <input type="text" class="form-control" id="email" placeholder="Correo Electronico" required>
-              <small class="errorTexto">Introduce Correo</small>
+              <input type="text" class="form-control" id="email" placeholder="Correo Electronico" >
+              <small id ="errorTexto  " class="form-text text-danger d-none">Introduce Correo</small>
             </div>
 
             <div class="form-group">
               <label for="form-message">Envia tu mensaje</label>
-              <textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje " required></textarea>
+              <textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje " ></textarea>
               <small class="errorTexto" id="errorTexto">Introduce texto</small>
             </div>
-            <button type="submit" class="btn btn-primary my-2" onclick="capturaDatos()">Enviar</button>
+            <button  class="btn btn-primary my-2" onclick="postear()">Enviar</button>
+            <button type="button" class="btn btn-primary my-2" onclick="capturaDatos()">Verifica tus datos</button>
+            
 
           </form>
         </div>
@@ -325,7 +327,7 @@
     </div>
   </main>
 
-  <footer class="container-fluid my-5">
+  <footer class="container-fluid my-5 ">
     <div class="text-center text-lg-start text-white" style="background-color: #588BA2">
       <div class="container p-4 pb-0">
 
