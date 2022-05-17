@@ -1,0 +1,45 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}.buton-libraryhab{
+   
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        width: 320px;
+        background-color: #74c2b999;
+        color: #fff;
+        margin-left: 5px;
+        letter-spacing: 5px;
+        width: 60%;
+        margin: 10px;
+        height: 50px;
+    
+       
+    }
+
+    .buton-libraryhab:hover{
+
+        background-color: #a9d3ce99;
+        color: grey;
+    }
+    .input-admin{
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        width: 100%;
+       height: 30px;
+       
+        margin-left: 5px;
+        letter-spacing: 5px;
+        margin: 10px;
+
+    }
+   #descript{
+       height: 150px;
+       border: 1px solid #ced4da;
+   }

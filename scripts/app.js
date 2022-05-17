@@ -49,6 +49,9 @@ if (distancia < 0) {
 }
  },1000);
 
+
+ 
+
  const pintarCards=()=>{
     fetch(`http://localhost:3000/habitaciones`)
     .then(response=>response.json())
@@ -100,4 +103,5 @@ if (distancia < 0) {
  }
 
  pintarCards()
+
 
