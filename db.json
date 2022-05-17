@@ -29,21 +29,24 @@
   "habitaciones":[
   {
     "titulo": "Habitacion Paramount",
-    "imagen": "https://ibb.co/dBJNNNb",
+    "imagen": "./img/habitacion1.png",
     "descripcion": "Disfruta en el regazo de la naturaleza.",
-    "id": 1
+    "id": 1,
+    "visible":true
   },
   {
     "titulo": "Habitacion Hillside",
-    "imagen": "https://ibb.co/pf1ZMSz",
+    "imagen":"https://lh3.google.com/u/0/d/1LOP8wz35py9ktKnY4usAMXAHFagxb6Wv=w1920-h990-iv1",
     "descripcion": "Abre la puerta a un mundo nuevo. Las personas durante el viaje buscan un espacio cómodo y afectuoso para vivir.",
-    "id": 2
+    "id": 2,
+    "visible":true
   },
   {
     "titulo": "Habitacion Crossroads",
     "imagen": "https://ibb.co/882Hc85",
     "descripcion": "El lujo de despertar frente al mar.Departamento dos ambientes y baño privado",
-    "id": 3
+    "id": 3,
+    "visible":true
   }
   ]
 }
