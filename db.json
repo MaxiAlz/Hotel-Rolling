@@ -18,6 +18,12 @@
       "id": 1,
       "body": "some comment",
       "postId": 1
+    },
+    {
+      "nombre": "miltobooo",
+      "correo": "milton206@gmail.com",
+      "texto": "sdsdsdsdsd",
+      "id": 2
     }
   ],
   "habitaciones":[
