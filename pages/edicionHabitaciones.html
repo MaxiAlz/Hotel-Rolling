@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+    <link rel="shortcut icon" href="../img/isotipo.png">
+    <script src="../scripts/edicionHabitacion.js"></script>
+    <link rel="stylesheet" href="./edicionHabitacion.css">
+</head>
+<body>
+    <header></header>
+    <body>
+        <main class="d-flex container-fluid justify-content-center">
+            <input type="text" placeholder="codigo" id="code" class="input-admin"></input>
+            <input type="text" placeholder="Habitación" id="habitaCion"class="input-admin"></input>
+            <input type="text" placeholder="descripción" id="descript" class="input-admin"></input>
+            <button onclick="libraryHabitacion.addHabitacion ( code, habitaCion, descript )" class="buton-libraryhab">Guardar</button>
+            <button onclick="libraryHabitacion.getHabitacion( code, habitaCion, descript )" class="buton-libraryhab">Listar Habitaciones</button>
+            <button onclick="libraryHabitacion.deleteHabitacion(code, habitaCion, descript )" class="buton-libraryhab">Eliminar Habitaciones</button>
+           
+     
+     
+     
+     
+     
+         </main>
+    </body>
+    <footer></footer>
+</body>
+</html>
