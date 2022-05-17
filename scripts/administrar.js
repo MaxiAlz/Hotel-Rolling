@@ -23,33 +23,33 @@ const obtenerDatosHabitaciones=()=>{
     })
 }
 
-const agregarContenidoCards=(habitaciones)=>{
-    habitaciones.forEach(habitacion => {
-        // en cada vuelta pinto los templates
-        templateCards.getElementById(`titulo-habitacion-card`).textContent=habitacion.titulo
-        templateCards.getElementById(`descipcion-habitacion-card`).textContent=habitacion.descripcion
-        // #####ver que onda esto que no anda###########
-        templateCards.getElementById(`imagen-habitacion-card`).setAttribute("src",habitacion.imagen)
-        // agregar al boton check el id
-        // templateCards.querySelector(`.botoncheck1`).dataset.id=habitacion.id
-        const clone=templateCards.cloneNode(true)
-        fragment.appendChild(clone)
-    })
-    cargarContenidoHabitaciones.appendChild(fragment)
-}
+// const agregarContenidoCards=(habitaciones)=>{
+//     habitaciones.forEach(habitacion => {
+//         // en cada vuelta pinto los templates
+//         templateCards.getElementById(`titulo-habitacion-card`).textContent=habitacion.titulo
+//         templateCards.getElementById(`descipcion-habitacion-card`).textContent=habitacion.descripcion
+//         // #####ver que onda esto que no anda###########
+//         templateCards.getElementById(`imagen-habitacion-card`).setAttribute("src",habitacion.imagen)
+//         // agregar al boton check el id
+//         // templateCards.querySelector(`.botoncheck1`).dataset.id=habitacion.id
+//         const clone=templateCards.cloneNode(true)
+//         fragment.appendChild(clone)
+//     })
+//     cargarContenidoHabitaciones.appendChild(fragment)
+// }
 
 // const botonCheck=document.getElementById(`BotonCheck1`)
-const mostrarCard=(boton)=>{
-    if(boton.checked){
-        console.log(`el boton dio: ${boton.checked}`)
+// const mostrarCard=(boton)=>{
+//     if(boton.checked){
+//         console.log(`el boton dio: ${boton.checked}`)
+//         //ir a la card del index y modificar la clase
+//         let habitacion=document.getElementById(`habitacion1`)
+//         habitacion.className="d-none"
+//         console.log(habitacion)
 
+//     }else{
+//         let habitacion=document.getElementById(`habitacion1`)
+//         habitacion.className="cateGorias"
+//     }
+// }
 
-    }
-}
-
-// function validar(obj){
-// 	if(obj.checked==true){
-// 		alert("si");
-// 	}else{
-// 		alert("no");
-// 	}
