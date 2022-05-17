@@ -136,44 +136,44 @@
     </section>
 
   </header>
-  <main class="container-fluid">
+  <main class="container-fluid justify-content-center">
     <!--TITULO DE BIENVENIDA-->
     <div class="titulo-bienvenida">
       <h1 class="">GRAND ROLLING HOTEL / RESERVAS</h1>
     </div>
-
+    
     <!--SELECTORES-->
     <div class="selectores d-flex">
-
-
+      
+      
       <div class="categoriaHabitacion">
-
+        
         <select class="form-select eigeHabitacion" aria-label=".form-select-sm example">
           <option selected>Categoria</option>
           <option value="1">Relax</option>
           <option value="2">Familiar</option>
           <option value="3">King</option>
         </select>
-
-
-
+        
+        
+        
 
       </div>
-
+      
       <div class="checkinOut d-flex">
         <div class="dateSelect"><label for="start">Check In:</label>
-
+          
           <input type="date" id="start" name="trip-start">
         </div>
 
         <div class="dateSelect"><label for="start">Check Out:</label>
-
+          
           <input type="date" id="start" name="trip-start">
         </div>
       </div>
 
-
-
+      
+      
       <div class="cuantasPersonas d-flex">
         <select class="form-select">
           <option selected>Adultos</option>
@@ -183,7 +183,7 @@
           <option value="4">4</option>
           <option value="5">5</option>
         </select>
-
+        
         <select class="form-select">
           <option selected>Niños</option>
           <option value="1">1</option>
@@ -192,7 +192,7 @@
           <option value="4">4</option>
           <option value="5">5</option>
         </select>
-
+        
         <button class="stiloBoton" type="button">
           Buscar
         </button>
@@ -201,9 +201,49 @@
 
 
     </div>
+
+    <!--CUENTA REGRESIVA-->
+    <section class="container-cuentaregresiva container-fluid d-flex justify-content-center">
+
+      <div class="text-countdown">
+          <h1 >La Oferta finaliza en:</h1>
+      </div>
+
+      <div class="container-countdown d-flex container-fluid">
+          <div class="countdown" style="margin: 10px;">
+              <!--recordar borrar los 00-->
+              <p id="days">
+
+              </p>
+              <span>dias</span>
+          </div>
+          <div class="countdown" style="margin: 10px;">
+              <p id="hours">
+
+              </p>
+              <span>horas</span>
+          </div>
+          <div class="countdown" style="margin: 10px;">
+              <p id="minutes">
+
+              </p>
+              <span>minutos</span>
+          </div>
+          <div class="countdown" style="margin: 10px;">
+              <p id="seconds">
+
+              </p>
+              <span>segundos</span>
+          </div>
+      </div>
+
+
+
+  </section>
+
     <!--CARDS-->
     <div class=" cardContainer d-flex">
-
+      
       <div class="card">
         <div class="face front">
           <img src="./img/suite.png" alt="suite">
