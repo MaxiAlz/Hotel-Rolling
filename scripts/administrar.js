@@ -7,7 +7,7 @@ crear funciones:
 
 // ACA DEBERIAMOS HACER TODA LA LOGICA DE LA PAGINA DE ADMINISTRACION
 const cargarContenidoHabitaciones=document.getElementById(`PintarCategoria`)//div donde se van a subir
-const templateCards=document.getElementById(`template-Card-Habitaciones`).content
+// const templateCards=document.getElementById(`template-Card-Habitaciones`).content
 const fragment=document.createDocumentFragment()
 
 console.log(cargarContenidoHabitaciones);
@@ -38,4 +38,18 @@ const agregarContenidoCards=(habitaciones)=>{
     cargarContenidoHabitaciones.appendChild(fragment)
 }
 
-// comen
+// const botonCheck=document.getElementById(`BotonCheck1`)
+const mostrarCard=(boton)=>{
+    if(boton.checked){
+        console.log(`el boton dio: ${boton.checked}`)
+
+
+    }
+}
+
+// function validar(obj){
+// 	if(obj.checked==true){
+// 		alert("si");
+// 	}else{
+// 		alert("no");
+// 	}
