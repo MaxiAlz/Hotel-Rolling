@@ -14,30 +14,35 @@ body{
    
 };
 .divCont{
-    margin-top: 150px;
+    margin-top: 500px;
 
 }
 
 h1{
    color: beige;
    text-align: center;
+   font-size: 80px
+   ;
    
 }
 
-button{
+a{
     align-items: center;
+    display: block;
 }
 .stiloBoton{
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
-    width: auto;
+   width: 100px;
+   margin: auto;
     background-color: #74c2b999;
     color: #fff;
-    margin: auto;
+    text-decoration: none;
+    
     letter-spacing: 5px;
-    display: block;
+ 
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     
 }
 .stiloBoton:hover{
