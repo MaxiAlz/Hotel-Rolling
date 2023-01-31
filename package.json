@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "json-server --watch db.json"
+    "server": "json-server --watch db.json",
+    "start": "react-scripts start"
   },
   "repository": {
     "type": "git",
