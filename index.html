@@ -21,7 +21,7 @@
 <body>
   <header>
     <section>
-      <div class="sliderimagenes">
+      <div class="sliderimagenes margin-100px">
         <div id="carouselExampleIndicators" class="carousel slide CarrouselStyle" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -42,13 +42,7 @@
               <img src="img/banner 3.png" class="d-block w-100 CarrouselStyle" alt="banner 3">
             </div>
             <!-- boton y descripcion sobre banner -->
-            <div class="sobreBanner ms-4">
-              <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-              <label class="btn btn-outline-dark botonSobreImagen" for="btncheck2">Reservar</label>
-              <div class="TextoSobreImagen fs-6">
-                <p class="boxtexto">SINCE 1995 - ¡Aprovecha nuestras ofertas de temporada!</p>
-              </div>
-            </div>
+           
             <!-- NAV BAR SOBRE EL BANNER -->
             <nav class="navbar navbar-expand-lg navbar-light" id="navBar">
               <div class="container-fluid navbarStyle">
@@ -91,7 +85,7 @@
                     </li>
                     <li class="nav-item fw-bolder d-flex justify-content-end">
                       <a class="" href="pages/LogIn.html">
-                        <button type="button" class="btn btn-outline-dark" id="BotonLogin">| Login</button>
+                        <button type="button" class="btn" id="BotonLogin">| Login</button>
                       </a>
                     </li>
                     <!-- boton admin -->
@@ -138,7 +132,7 @@
   </header>
 
 
-  <main class="container-fluid justify-content-center">
+  <main class="justify-content-center" style="margin: 0;">
     <!--TITULO DE BIENVENIDA-->
     <div class="titulo-bienvenida">
       <h1 class="">GRAND ROLLING HOTEL / RESERVAS</h1>
@@ -195,8 +189,8 @@
           <option value="5">5</option>
         </select>
         
-        <button class="stiloBoton" type="button">
-          Buscar
+        <button class="stiloBoton" type="button"><a href="./pages/error404.html" style="text-decoration: none; color: white;">Buscar</a>
+          
         </button>
       </div>
 
@@ -346,80 +340,61 @@
     </div>
   </main>
 
-  <footer class="container-fluid my-5 ">
-    <div class="text-center text-lg-start text-white" style="background-color: #588BA2">
-      <div class="container p-4 pb-0">
-
-        <section class="">
-
-          <div class="row d-flex justify-content-center">
-
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">
-                Grand Rolling Beach Hotel
-              </h6>
-              <p>
-                Grand Beach Hospitality Group
-                4835 Collins Ave
-                Miami Beach, FL 33140
-                Phone: +1 305-538-8666
-
-              </p>
-            </div>
-
-
-            <hr class="w-100 clearfix d-md-none" />
-
-
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 d-flex justify-content-center">
-
-              <a class="text-uppercase mb-4 text-decoration-none text-white font-weight-bold"
-                href="#nombre">Contacto</a>
-
-            </div>
-
-
-            <hr class="w-100 clearfix d-md-none" />
-
-
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              <a class="text-uppercase mb-4 text-decoration-none text-white font-weight-bold d-flex justify-content-center"
-                href="./pages/error404.html">Acerca</a>
-
-            </div>
-
-
-            <hr class="w-100 clearfix d-md-none" />
-
-
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <a class="text-uppercase mb-4 text-decoration-none text-white font-weight-bold footer-text"
-                href="#navBar">Hoteles</a>
-
-            </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+  <footer>
+    <div class="" style="background-color: #588BA2; width: 100%;">
+          <div class="container p-1 pb-0">
+    
+            <section>
+    
+              <div class="row d-flex  justify-content-between mt-4 justify-content-center">
+    
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto elementosFooterCentrados">
+                  <a href="../index.html" class="text-uppercase mb-4 font-weight-bold d-flex justify-content-center" style="text-decoration: none; color: white;">Grand Rolling Beach Hotel</a>
+                 
+                </div>
+                <hr class="w-100 clearfix d-md-none" />
+          
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto elementosFooterCentrados">
+                  <a class="text-uppercase mb-4 text-decoration-none text-white font-weight-bold d-flex justify-content-center"
+                    href="#nombre">Contacto</a>
+                </div>
+    
+    
+                <hr class="w-100 clearfix d-md-none" />
+    
+    
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto elementosFooterCentrados">
+                  <a class="text-uppercase mb-4 text-decoration-none text-white font-weight-bold d-flex justify-content-center " href="#">Acerca</a>
+    
+                </div>
+    
+    
+                <hr class="w-100 clearfix d-md-none" />
+    
+    
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto elementosFooterCentrados ">
+                  <a class="text-uppercase mb-4 text-decoration-none text-white font-weight-bold footer-text d-flex justify-content-center" href="#navBar">Hoteles</a>
+    
+                </div>
+               
+    
+    
+    
+              </div>
+    
+            </section>
 
 
-            </div>
-
-
-
+            <hr class="my-3">
+    
+            <section class="p-3 pt-0">
+              <div class="row d-flex justify-content-center">
+                <p>Copyright 2023 - Mel Lopez </p>
+    
+            </section>
+    
           </div>
-
-        </section>
-
-
-        <hr class="my-3">
-
-
-        <section class="p-3 pt-0">
-          <div class="row d-flex justify-content-center">
-            <p>Copyright 2022 </p>
-
-        </section>
-
-      </div>
-    </div>
+        </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

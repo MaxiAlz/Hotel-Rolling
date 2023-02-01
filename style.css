@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
 }
 /* ------------index footer--------------- */
 .navbarStyle{
@@ -125,6 +126,7 @@ main {
     color: #fff;
     margin-left: 5px;
     letter-spacing: 5px;
+    text-decoration: none;
     
 }
 .stiloBoton:hover{
@@ -458,5 +460,19 @@ box-shadow: 0 5px 10px rgb(105, 107, 112);
         margin: 0;
         
         
+    }
+
+    #BotonLogin:hover{
+background-color: #74c2b999 ;
+color: white;
+    }
+
+    .elementosFooterCentrados{
+        height: 50px;
+      
+    }
+
+    .elementosFooterCentrados a {
+       align-items: center;
     }
     
