@@ -475,4 +475,27 @@ color: white;
     .elementosFooterCentrados a {
        align-items: center;
     }
-    
+
+    input:focus, input.form-control:focus, textarea:focus, textarea.form-control:focus , select.form-select:focus, div.dateSelect:focus{
+
+        outline:none !important;
+
+        outline-width: 0 !important;
+
+        box-shadow: none;
+
+        border-color: rgb(#74c2b999, 144, 0);
+
+        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #74c2b999;
+
+    }
+    input.form-control::placeholder, textarea.form-control::placeholder{
+        color: rgb(183, 179, 179);
+    }
+
+    button.btn-select
+{
+    outline:none !important;
+
+  
+}    

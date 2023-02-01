@@ -19,7 +19,7 @@ const $days = document.getElementById('days'),
 
  //fecha a futuro
 
- const countdownDate = new Date('may 18, 2022 00:00:00').getTime();
+ const countdownDate = new Date('feb 2, 2023 22:00:00').getTime();
 
  let interval = setInterval(function(){
 //fecha actual

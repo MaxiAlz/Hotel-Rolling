@@ -289,14 +289,113 @@
         </div>
       </div>
     </div>
-    <!--CATEGORIAS-->
-    <div class="categorias-container container-fluid d-flex" id="PintarCategoria">
+    <div class=" cardContainer d-flex">
+      
+      <div class="card">
+        <div class="face front">
+          <img src="./img/suite.png" alt="suite">
+          <h2>Amenities</h2>
+        </div>
+        <div class="face back">
+          <h2>Amenities</h2>
+          <p>Nuestros hoteles cuentan con staff capacitado multi-lenguaje, piscinas climatizadas y de exterior, sector relax con spa, centro de convenciones, candy bar y restaurante para hacer de su estadía lo más agradable posible.</p>
+          <div class="link">
+            <a href="./pages/error404.html" target="_blank">Detalles</a>
+          </div>
+        </div>
 
-      <!-- no borren esto NO ESTA AL PEDO -->
+      </div>
+      <div class="card">
+        <div class="face front">
+          <img src="./img/chicaEnLaPlaya.png" alt="chicaenlaplaya">
+          <h2>Ofertas</h2>
+        </div>
+        <div class="face back">
+          <h2>Ofertas</h2>
+          <p>¡Aprovecha nuestras ofertas de temporada! Desde el 01/06/2022 inicia nuestro mes aniversario, tenemos muchas ofertas para usted.</p>
+          <div class="link">
+            <a href="#">Detalles</a>
+          </div>
+
+
+
+
+        </div>
+      </div>
+      <div class="card">
+        <div class="face front">
+          <img src="./img/piscina.png" alt="pisicina">
+          <h2>Concepto</h2>
+        </div>
+        <div class="face back">
+          <h2>Concepto</h2>
+          <p>Nuestros hoteles estan pensados para la familia, un momento íntimo o reuniones corporativas, cada espacio está detallado para esos momentos únicos que quedarán en la memoria de todos los que decidan ser parte de la familia Grand Rolling.</p>
+          <div class="link">
+            <a href="#">Detalles</a>
+          </div>
+
+
+
+
+        </div>
+      </div>
     </div>
+    <div class=" cardContainer d-flex">
+      
+      <div class="card">
+        <div class="face front">
+          <img src="./img/suite.png" alt="suite">
+          <h2>Amenities</h2>
+        </div>
+        <div class="face back">
+          <h2>Amenities</h2>
+          <p>Nuestros hoteles cuentan con staff capacitado multi-lenguaje, piscinas climatizadas y de exterior, sector relax con spa, centro de convenciones, candy bar y restaurante para hacer de su estadía lo más agradable posible.</p>
+          <div class="link">
+            <a href="./pages/error404.html" target="_blank">Detalles</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="face front">
+          <img src="./img/chicaEnLaPlaya.png" alt="chicaenlaplaya">
+          <h2>Ofertas</h2>
+        </div>
+        <div class="face back">
+          <h2>Ofertas</h2>
+          <p>¡Aprovecha nuestras ofertas de temporada! Desde el 01/06/2022 inicia nuestro mes aniversario, tenemos muchas ofertas para usted.</p>
+          <div class="link">
+            <a href="#">Detalles</a>
+          </div>
+
+
+
+
+        </div>
+      </div>
+      <div class="card">
+        <div class="face front">
+          <img src="./img/piscina.png" alt="pisicina">
+          <h2>Concepto</h2>
+        </div>
+        <div class="face back">
+          <h2>Concepto</h2>
+          <p>Nuestros hoteles estan pensados para la familia, un momento íntimo o reuniones corporativas, cada espacio está detallado para esos momentos únicos que quedarán en la memoria de todos los que decidan ser parte de la familia Grand Rolling.</p>
+          <div class="link">
+            <a href="#">Detalles</a>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  
+   
 
     <!--MAPA Y FORMULARIO-->
-    <div class="container-fluid">
+    <div class="container-fluid mb-4">
       <div class="contactanos">
         <h2>Comunicate con nosotros</h2>
       </div>
@@ -314,23 +413,23 @@
         <div class="col-md-6">
           <form class="formulario" id="formulario">
             <div class="form-group">
-              <label for="nombre">Nombre</label>
-              <input type="" class="form-control" id="nombre" placeholder="Nombre" >
-              <small  id= "errorTexto"class="errorTexto">Introduce Nombre</small>
+              <label for="nombre"></label>
+              <input type="text" class="form-control"  id="nombre" placeholder="Nombre" >
+              <small  id= "errorTexto"class="errorTexto"></small>
             </div>
             <div class="form-group">
-              <label for="form-email">Correo Electronico</label>
-              <input type="text" class="form-control" id="email" placeholder="Correo Electronico" >
-              <small id ="errorTexto  " class="form-text text-danger d-none">Introduce Correo</small>
+              <label for="form-email"></label>
+              <input type="email" class="form-control" id="email" placeholder="Correo Electronico" >
+              <small id ="errorTexto  " class="form-text text-danger d-none"></small>
             </div>
 
             <div class="form-group">
-              <label for="form-message">Envia tu mensaje</label>
-              <textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje " ></textarea>
-              <small class="errorTexto" id="errorTexto">Introduce texto</small>
+              <label for="form-message"></label>
+              <textarea class="form-control mb-4" id="mensaje" placeholder="Escribe tu mensaje "></textarea>
+              <small class="errorTexto" id="errorTexto"> </small>
             </div>
-            <button  class="btn btn-primary my-2" onclick="postear()">Enviar</button>
-            <button type="button" class="btn btn-primary my-2" onclick="capturaDatos()">Verifica tus datos</button>
+            <button  class="btn btn-primary my-2 btn-select" style="background-color: #588BA2;" onclick="postear()">Enviar</button>
+            <button type="button" class="btn my-2 btn-select" style="background-color: #588BA2;color: white;" onclick="capturaDatos()">Verifica tus datos</button>
             
 
           </form>
